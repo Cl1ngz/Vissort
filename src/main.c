@@ -16,7 +16,7 @@ int main() {
   // Inicialize ncurses
   initscr();
   start_color();
-  init_pair(1, COLOR_RED, COLOR_BLACK);
+  init_pair(1, COLOR_MAGENTA, COLOR_BLACK);
 
   printw("Press any key to start sorting...");
   refresh();
