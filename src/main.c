@@ -1,5 +1,5 @@
 #include "../include/algorithms/bubble_sort.h"
-#include <ncurses.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -13,23 +13,15 @@ int main() {
     arr[i] = rand() % 20 + 1;
   }
 
-  // Inicialize ncurses
-  initscr();
-  start_color();
-  init_pair(1, COLOR_MAGENTA, COLOR_BLACK);
-
-  printw("Press any key to start sorting...");
-  refresh();
-  getch();
-
   // Sorting and visualization
+  printf("Press Enter to start sorting...");
+  getchar();
+
   bubble_sort(arr, n);
 
   // End of sorting
-  printw("\nSorting complete. Press any key to exit.");
-  refresh();
-  getch();
+  printf("\nSorting complete. Press Enter to exit.");
+  getchar();
 
-  endwin(); // End ncurses
   return 0;
 }

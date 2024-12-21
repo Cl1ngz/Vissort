@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
-LDFLAGS = -lncurses
+LDFLAGS = 
 
-SRC = src/main.c src/algorithms/bubble_sort.c src/utils/ncurses_utils.c
+SRC = src/main.c src/algorithms/bubble_sort.c src/utils/array_utils.c
 OBJ = $(SRC:.c=.o)
 TARGET = build/visualizer
 
