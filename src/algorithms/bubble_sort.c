@@ -1,6 +1,5 @@
 #include "../../include/algorithms/bubble_sort.h"
-#include <ncurses.h>
-#include <unistd.h>
+#include "../../include/utils/array_utils.h"
 
 void bubble_sort(int arr[], int n) {
   for (int i = 0; i < n - 1; i++) {
@@ -11,7 +10,7 @@ void bubble_sort(int arr[], int n) {
         arr[j + 1] = temp;
       }
       // Vizualization after each iteration
-      visualize_array(arr, n, j, j + 1);
+      visualize_array(arr, n, j, j + 1, i);
     }
   }
 }

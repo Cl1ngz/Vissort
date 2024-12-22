@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 LDFLAGS = 
 
-SRC = src/main.c src/algorithms/bubble_sort.c src/utils/array_utils.c
+SRC = src/main.c $(wildcard src/algorithms/*.c) src/utils/array_utils.c
 OBJ = $(SRC:.c=.o)
 TARGET = build/visualizer
 

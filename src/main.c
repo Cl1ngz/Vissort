@@ -1,4 +1,7 @@
 #include "../include/algorithms/bubble_sort.h"
+#include "../include/algorithms/insertion_sort.h"
+#include "../include/algorithms/merge_sort.h"
+#include "../include/algorithms/selection_sort.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -17,7 +20,9 @@ int main() {
   printf("Press Enter to start sorting...");
   getchar();
 
-  bubble_sort(arr, n);
+  /* selection_sort(arr, n); */
+  /*TODO: worng vizualisation frames skipping insertion_sort(arr, n); */
+  merge_sort(arr, 0, n - 1);
 
   // End of sorting
   printf("\nSorting complete. Press Enter to exit.");

@@ -13,7 +13,7 @@
 
 void visualize_array(int arr[], int n, int highlight_index1,
                      int highlight_index2, int sorted_index) {
-  printf("\033[H\033[J"); // Clear screen
+  printf("\033[H\033[J"); //  Clear screen
 
   // Get the terminal dimensions dynamically
   int rows = 24; // Default fallback for terminal rows
@@ -34,7 +34,7 @@ void visualize_array(int arr[], int n, int highlight_index1,
   // Display title at the middle top
   const char *title = "Bubble Sort";
   int title_col = (cols - strlen(title)) / 2;
-  MOVE_CURSOR(1, title_col);
+  MOVE_CURSOR(2, title_col);
   printf("%s%s%s", COLOR_BLUE, title, COLOR_RESET);
 
   // Start visualization at the bottom center
