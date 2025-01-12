@@ -19,17 +19,45 @@ int main() {
   }
 
   // Sorting and visualization
-  printf("Press Enter to start sorting...");
+  printf("Press Enter to get into selection of sorting algorithm.");
   getchar();
 
-  /* bubble_sort(arr, n); */
-  /* selection_sort(arr, n); */
-  /*TODO: worng vizualisation frames skipping insertion_sort(arr, n); */
-  /* merge_sort(arr, 0, n - 1); */
+  // Select an algorithm to visualize
+  printf("Awailable sorting algorithms:\n");
+  printf("1) Bubble Sort\n");
+  printf("2) Selection Sort\n");
+  printf("3) Insertion Sort\n");
+  printf("4) Merge Sort\n");
+  printf("5) Quick Sort\n");
+  printf("6) Counting Sort\n");
+  printf("Select an algorithm to visualize:\n");
 
-  /* quick_sort(arr, 0, n - 1); */
-
-  counting_sort(arr, n);
+  int choice;
+  scanf("%d", &choice);
+  switch (choice) {
+  case 1:
+    bubble_sort(arr, n);
+    break;
+  case 2:
+    selection_sort(arr, n);
+    break;
+  case 3:
+    insertion_sort(arr, n);
+    break;
+  case 4:
+    // TODO: Fix this
+    merge_sort(arr, 0, n - 1);
+    break;
+  case 5:
+    quick_sort(arr, 0, n - 1);
+    break;
+  case 6:
+    counting_sort(arr, n);
+    break;
+  default:
+    printf("Invalid choice. Exiting.");
+    return 1;
+  }
 
   // End of sorting
   printf("\nSorting complete. Press Enter to exit.");
