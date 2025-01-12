@@ -26,7 +26,7 @@ void merge(int arr[], int l, int m, int r) {
     k++;
 
     // Visualize the array after each merge operation
-    visualize_array(arr, r - l + 1, i, j, m);
+    visualize_array(arr, r + 1, k - 1, -1, -1);
   }
 
   // Copy the remaining elements of L[], if any
@@ -34,6 +34,7 @@ void merge(int arr[], int l, int m, int r) {
     arr[k] = L[i];
     i++;
     k++;
+    visualize_array(arr, r + 1, k - 1, -1, -1);
   }
 
   // Copy the remaining elements of R[], if any
@@ -41,17 +42,18 @@ void merge(int arr[], int l, int m, int r) {
     arr[k] = R[j];
     j++;
     k++;
+    visualize_array(arr, r + 1, k - 1, -1, -1);
   }
 
   // Final visualization after merge is complete
-  visualize_array(arr, r - l + 1, -1, -1, m);
+  visualize_array(arr, r + 1, -1, -1, -1);
 }
 
 // Merge sort function
 void merge_sort(int arr[], int l, int r) {
   if (l < r) {
     // Visualize the current state before the recursion splits the array
-    visualize_array(arr, r - l + 1, -1, -1, l);
+    visualize_array(arr, r + 1, -1, -1, -1);
 
     // Find the middle point and divide the array into two halves
     int m = l + (r - l) / 2;
