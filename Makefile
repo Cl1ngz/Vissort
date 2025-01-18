@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 LDFLAGS = 
 
-SRC = src/main.c $(wildcard src/algorithms/*.c) src/utils/array_utils.c
+SRC = src/main.c $(wildcard src/algorithms/*.c) $(wildcard src/utils/*.c) 
 OBJ = $(SRC:.c=.o)
 TARGET = build/visualizer
 

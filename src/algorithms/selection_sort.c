@@ -7,11 +7,11 @@ void selection_sort(int arr[], int n) {
     for (int j = i + 1; j < n; j++) {
       if (arr[j] < arr[minIndex])
         minIndex = j;
-      // Vizualization after each iteration
-      visualize_array(arr, n, j, j + 1, j);
     }
     int temp = arr[minIndex];
     arr[minIndex] = arr[i];
     arr[i] = temp;
+    // Vizualization after each iteration
+    visualize_array(arr, n, i, minIndex, i);
   }
 }
