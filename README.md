@@ -33,25 +33,28 @@ $ ./build/visualizer
 │   │   ├──  bubble_sort.h
 │   │   ├──  counting_sort.h
 │   │   ├──  insertion_sort.h
-│   │   ├──  merge_sort.h
 │   │   ├──  quick_sort.h
 │   │   └──  selection_sort.h
 │   └──  utils
-│       └──  array_utils.h
+│       ├──  array_utils.h
+│       ├──  file_utils.h
+│       └──  linked_list.h
 ├──  LICENSE
 ├──  Makefile
+├──  numbers.txt
 ├── 󰂺 README.md
 └──  src
     ├──  algorithms
     │   ├──  bubble_sort.c
     │   ├──  counting_sort.c
     │   ├──  insertion_sort.c
-    │   ├──  merge_sort.c
     │   ├──  quick_sort.c
     │   └──  selection_sort.c
     ├──  main.c
     └──  utils
-        └──  array_utils.c
+        ├──  array_utils.c
+        ├──  file_utils.c
+        └──  linked_list.c
 ```
 
 ## LICENSE
