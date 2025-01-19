@@ -21,7 +21,6 @@ void counting_sort(int arr[], int n) {
     count[arr[i]]++;
     visualize_counting_sort(arr, n, count, range, 1, NULL);
   }
-  usleep(500000); // Delay between stages
   printf("\033[H\033[J");
 
   // Stage 2: Cumulative count
@@ -29,7 +28,6 @@ void counting_sort(int arr[], int n) {
     count[i] += count[i - 1];
     visualize_counting_sort(arr, n, count, range, 2, NULL);
   }
-  usleep(500000); // Delay between stages
   printf("\033[H\033[J");
 
   // Stage 3: Build sorted array
@@ -42,7 +40,6 @@ void counting_sort(int arr[], int n) {
   }
 
   // Final sorted array
-  usleep(500000);
   printf("\033[H\033[J");
   visualize_counting_sort(arr, n, count, range, 3, output);
 }

@@ -10,7 +10,7 @@
 #include <time.h>
 
 int main() {
-  int n = 50; // Default size of array
+  int n = 20; // Default size of array
   int arr[n];
 
   Node *random_list = NULL; // Linked list for random numbers

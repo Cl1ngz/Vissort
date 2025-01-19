@@ -29,7 +29,6 @@ int partition(int arr[], int low, int high) {
   return i + 1;
 }
 
-// Quick sort function
 void quick_sort(int arr[], int low, int high) {
   if (low < high) {
     // Visualize the current range being sorted

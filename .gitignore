@@ -1,5 +1,7 @@
 # Ignore all .o files
 *.o
+*.a1
+*.s1
 
 # Ignore the entire /build directory
 /build/
