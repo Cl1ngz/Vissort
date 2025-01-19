@@ -4,6 +4,11 @@ Simple sorting algorithm visualizer made with C. Made for collage project.
 
 Works great on linux with kitty terminal, shloud work on windows too i think.
 
+## Preview:
+
+![My Image](images/p1.png)
+![My Image](images/p2.png)
+
 ### How to clone:
 
 ```bash
