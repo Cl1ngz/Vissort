@@ -3,8 +3,8 @@
 #include "../include/algorithms/insertion_sort.h"
 #include "../include/algorithms/quick_sort.h"
 #include "../include/algorithms/selection_sort.h"
-#include "../include/utils/file_utils.h"  // Include file utilities
-#include "../include/utils/linked_list.h" // Include linked list
+#include "../include/utils/file_utils.h"
+#include "../include/utils/linked_list.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -13,8 +13,8 @@ int main() {
   int n = 20; // Default size of array
   int arr[n];
 
-  Node *random_list = NULL; // Linked list for random numbers
-  Node *sorted_list = NULL; // Linked list for sorted numbers
+  Node *random_list = NULL;
+  Node *sorted_list = NULL;
 
   const char *filename = "numbers.txt";
 
@@ -46,7 +46,7 @@ int main() {
 
   int choice;
   scanf("%d", &choice);
-  getchar(); // Clear buffer
+  getchar();
   switch (choice) {
   case 1:
     bubble_sort(arr, n);
@@ -84,7 +84,6 @@ int main() {
   printf("\nContents of the file:\n");
   read_numbers_from_file(filename);
 
-  // Cleanup
   free_list(random_list);
   free_list(sorted_list);
 
