@@ -1,10 +1,19 @@
 # Vissort
 
-Simple sorting algorithm visualizer made with C.
+Simple sorting algorithm visualizer made with C (Cli app).
+
+Works great on most linux distribution with modern terminal such as kitty.
+
+### How to clone:
+
+```bash
+$ git clone https://github.com/Cl1ngz/Vissort.git
+```
 
 ### How to build:
 
 ```bash
+$ cd Vissort
 $ make
 ```
 

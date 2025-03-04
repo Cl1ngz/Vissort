@@ -1,7 +1,6 @@
 #include "../include/algorithms/bubble_sort.h"
 #include "../include/algorithms/counting_sort.h"
 #include "../include/algorithms/insertion_sort.h"
-#include "../include/algorithms/merge_sort.h"
 #include "../include/algorithms/quick_sort.h"
 #include "../include/algorithms/selection_sort.h"
 #include <stdio.h>
@@ -9,7 +8,7 @@
 #include <time.h>
 
 int main() {
-  int n = 20; // Default size of array
+  int n = 30; // Default size of array
   int arr[n];
 
   // Generate random table
@@ -27,9 +26,8 @@ int main() {
   printf("1) Bubble Sort\n");
   printf("2) Selection Sort\n");
   printf("3) Insertion Sort\n");
-  printf("4) Merge Sort\n");
-  printf("5) Quick Sort\n");
-  printf("6) Counting Sort\n");
+  printf("4) Quick Sort\n");
+  printf("5) Counting Sort\n");
   printf("Select an algorithm to visualize:\n");
 
   int choice;
@@ -45,14 +43,10 @@ int main() {
     insertion_sort(arr, n);
     break;
   case 4:
-    // TODO: Fix this
-    merge_sort(arr, 0, n - 1);
+    quick_sort(arr, 0, n - 1, n);
     break;
   case 5:
-    quick_sort(arr, 0, n - 1);
-    break;
-  case 6:
-    counting_sort(arr, n);
+    counting_sort(arr, n, n - 1);
     break;
   default:
     printf("Invalid choice. Exiting.");
